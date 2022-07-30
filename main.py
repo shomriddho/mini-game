@@ -100,7 +100,7 @@ if ca==1:
     
 if ca==2:
   print('link: https://github.com/shomriddho/mini-game')
-
+  
 
   
 
