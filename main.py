@@ -2,6 +2,8 @@ import random
 import time 
 
 def dgame():
+
+    
   spin = random.randint(1, 6)
   bullet = int(input("Load the six-shooter with a number between 1 and 6: "))
   time.sleep(2)
@@ -91,13 +93,14 @@ if ca==1:
   fg=int(input("1=gun,2=rps,3=gusee game. enter the number: "))
   if fg==1:
     dgame()
-  if fg==2:
-    guess()
   if fg==3:
+    guess()
+  if fg==2:
     rps()
     
 if ca==2:
-  pass  
+  print('link: https://github.com/shomriddho/mini-game')
+
 
   
 
