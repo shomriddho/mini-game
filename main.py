@@ -1,6 +1,8 @@
 import random
 import time 
 import turtle
+
+
 def code():
 
   back4=input("do you want to go back? y=yes n=no: ")
@@ -170,8 +172,3 @@ def rps():
   rps()    
 
 start()
-
-
-
-
-
