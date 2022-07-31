@@ -2,14 +2,15 @@ import random
 import time 
 import turtle
 
-
-def code():
-
+def back():
   back4=input("do you want to go back? y=yes n=no: ")
   if back4=="y":
     main()
   else:
-    pass  
+    pass 
+def code():
+
+  back()
 
   print("github link to this project: https://github.com/shomriddho/mini-game ")
   print("👋 Hi, I’m @shomriddho")
@@ -17,6 +18,7 @@ def code():
   print("🌱 I’m currently learning c++, python, web")
   print("💞️ I’m looking to collaborate on a python app")
   print("📫 How to reach me shomriddho.world@gmail.com")
+
 
 def main():
   print("welcome to the game of mini games")
@@ -82,12 +84,7 @@ def start():
 
 def dgame():
 
-  back1=input("do you want to go back? y=yes n=no: ")
-  if back1=="y":
-    main()
-  else:
-    pass  
-
+  back()
   spin = random.randint(1, 6)
   bullet = int(input("Load the six-shooter with a number between 1 and 6: "))
   time.sleep(2)
@@ -110,11 +107,7 @@ def dgame():
   dgame()    
 
 def guess():
-  back2=input("do you want to go back? y=yes n=no: ")
-  if back2=="y":
-    main()
-  else:
-    pass  
+  back()
 
 
   num = random.randint(1, 5)
@@ -127,11 +120,7 @@ def guess():
   guess()   
 def rps():
 
-  back3=input("do you want to go back? y=yes n=no: ")
-  if back3=="y":
-    main()
-  else:
-    pass  
+  back()
   choices = ["Rock", "Paper", "Scissors"]
 
 #how the opponent picks a choice
