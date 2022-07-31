@@ -1,9 +1,91 @@
 import random
 import time 
+import turtle
+def code():
+
+  back4=input("do you want to go back? y=yes n=no: ")
+  if back4=="y":
+    main()
+  else:
+    pass  
+
+  print("github link to this project: https://github.com/shomriddho/mini-game ")
+  print("👋 Hi, I’m @shomriddho")
+  print("👀 I’m interested in python, c++, c#, web")
+  print("🌱 I’m currently learning c++, python, web")
+  print("💞️ I’m looking to collaborate on a python app")
+  print("📫 How to reach me shomriddho.world@gmail.com")
+
+def main():
+  print("welcome to the game of mini games")
+  print("")
+  time.sleep(3)
+  print("geting data")
+  time.sleep(1)
+  for i in range(6):
+    time.sleep(1)
+    print("loading...")
+
+  print("")  
+  print("1.Home")
+  print("2.Source code")      
+  print("")
+  ca=int(input("1=home,2=source code. enter the number: "))
+  if ca==1:
+    print("pick a game")
+    print("1.gun game,2.rps,3.gusee game")
+    fg=int(input("1=gun,2=rps,3=gusee game. enter the number: "))
+    if fg==1:
+      dgame()
+    if fg==3:
+      guess()
+    if fg==2:
+      rps()
+      
+  if ca==2:
+    code()
+
+    
+def start(): 
+# set screen
+  Screen = turtle.Turtle()
+
+  # decide colors
+  cir= ['red','green','blue','yellow','purple']
+
+  # decide pensize
+  turtle.pensize(4)
+
+  # Draw star pattern
+  turtle.penup()
+  turtle.setpos(-90,30)
+  turtle.pendown()
+  for i in range(5):
+    turtle.pencolor(cir[i])
+    turtle.forward(200)
+    turtle.right(144)
+
+  turtle.penup()
+  turtle.setpos(80,-140)
+  turtle.pendown()
+
+  # choose pen color
+  turtle.pencolor("Black")
+  time.sleep(2)
+  turtle.bye()
+  time.sleep(2)
+
+  main()
+
 
 def dgame():
 
-    
+  back1=input("do you want to go back? y=yes n=no: ")
+  if back1=="y":
+    main()
+  else:
+    pass  
+
   spin = random.randint(1, 6)
   bullet = int(input("Load the six-shooter with a number between 1 and 6: "))
   time.sleep(2)
@@ -26,6 +108,13 @@ def dgame():
   dgame()    
 
 def guess():
+  back2=input("do you want to go back? y=yes n=no: ")
+  if back2=="y":
+    main()
+  else:
+    pass  
+
+
   num = random.randint(1, 5)
   guess = input("Guess a number between 1 and 5: ")
   if guess == str(num):
@@ -35,6 +124,12 @@ def guess():
       print("The number was: " + str(num))
   guess()   
 def rps():
+
+  back3=input("do you want to go back? y=yes n=no: ")
+  if back3=="y":
+    main()
+  else:
+    pass  
   choices = ["Rock", "Paper", "Scissors"]
 
 #how the opponent picks a choice
@@ -73,37 +168,8 @@ def rps():
       print("You picked Paper")    
       print("You lose!")
   rps()    
-      
-print("welcome to the game of mini games")
-print("")
-time.sleep(3)
-print("geting data")
-time.sleep(1)
-for i in range(6):
-  time.sleep(1)
-  print("loading...")
-print("")  
-print("1.Home")
-print("2.Source code")      
-print("")
-ca=int(input("1=home,2=source code. enter the number: "))
-if ca==1:
-  print("pick a game")
-  print("1.gun game,2.rps,3.gusee game")
-  fg=int(input("1=gun,2=rps,3=gusee game. enter the number: "))
-  if fg==1:
-    dgame()
-  if fg==3:
-    guess()
-  if fg==2:
-    rps()
-    
-if ca==2:
-  print('link: https://github.com/shomriddho/mini-game')
-  
 
-  
-
+start()
 
 
 
