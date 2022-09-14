@@ -1,4 +1,5 @@
 import random
+import string
 import time 
 import turtle
 
@@ -112,11 +113,11 @@ def guess():
 
   num = random.randint(1, 5)
   guess = input("Guess a number between 1 and 5: ")
-  if guess == str(num):
+  if guess == string(num):
       print("You win!")
-  if guess != str(num):
+  if guess != string(num):
       print("You lose!\n")
-      print("The number was: " + str(num))
+      print("The number was: " + (num))
   guess()   
 def rps():
 
